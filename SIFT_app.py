@@ -52,7 +52,7 @@ class My_App(QtWidgets.QMainWindow):
 
     def SLOT_query_camera(self):
         ret, frame = self._camera_device.read() #get frames from video feed
-        img = cv2.imread(self.template_path) #base image in bw to match (got from folder but probs better way to do this?)
+        img = cv2.imread(self.template_path) #base image in bw to match 
         
         sift = cv2.xfeatures2d.SIFT_create()
 
